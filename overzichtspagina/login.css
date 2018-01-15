@@ -1,0 +1,233 @@
+/*colors*/
+:root {
+    --green: #00D66C;
+    --blue: #2800A0;
+    --pink: #FF3268;
+    --beige: #F3E5D8;
+    --grey: #606060;
+    --black: #202020;
+    --white: #ffffff;
+}
+
+
+
+/* fonts */
+
+@font-face {
+  font-family: 'nexa';
+  src: url('fonts/nexa-bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('fonts/nexa-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    font-size: 100%;
+    
+ 
+}
+
+
+
+/* header *//* geraadpleegd van de website www.transavia.nl via inspecteren*/
+
+body > header  {
+    background-image: url(images/SFEERBEELD.jpg);
+    background-image: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    
+}
+
+
+
+nav {
+    top: 0;
+    width: 100%;
+    height: 2.6em;
+    display: flex;
+    flex-flow: row nowrap;
+    color: #00d66c;
+    background-color: white;
+    box-shadow: 0em .2em .5em rgba(0, 0, 0, 0.18);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    
+    align-items: center;
+    height: 2.7em;
+    padding-top: .2em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    flex-grow: 0.01;
+}
+
+nav ul:nth-of-type(1) {
+    cursor: pointer;
+    position: relative;
+    margin: 0 0 0 1em;
+    height: 1em;
+    flex-grow: 3;
+}
+
+nav ul:nth-of-type(2) {
+    margin: 0 .em 0 0;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+form {
+    width: 11em;
+    border-radius: 6px;
+    background:rgba(255,255,255, 0.8);
+    margin:4em 0;
+    width: 18em;
+    border-radius: 6px;
+           
+}
+form * {
+    font-size: inherit;
+    font-family: inherit;
+    padding-left: 0.5em;
+}
+
+body {
+    background-image: url(images/raphael-biscaldi-297829.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer {
+    height: 23.75em;
+    width: 100%;
+    background-color: var(--green)
+    
+}
+
+
+legend {
+    margin-bottom: 1.3em;
+    font-size: 1.5em;
+}
+
+
+fieldset {
+    border:none;
+    font-family: 'nexa';
+    font-weight: bold;
+    padding: 0;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    border:none;
+    margin-top: 1em;
+    margin-right: .5em;
+}
+
+
+form h2 {
+    color: var(--green);
+    
+}
+
+input {
+    width: 100%;
+    height: 2.5em;
+    margin: 0;
+    padding: .5rem 1rem .7rem .3rem;
+    overflow: hidden;
+    display: inline-block;
+    color: var(--grey);
+    border-radius: 6px;
+    
+}
+
+label {
+    margin-bottom: .5em;
+    margin-top: .5em;
+    margin-left: -.4em;
+}
+
+main header {
+    padding-left: 0.6em;
+    font-size: 1.3em;
+    background-color: var(--white);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+a {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+input[type='submit'] {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .4375em 1.5em .5625em;
+  position: relative;
+  border: 0;
+  line-height: 1.5;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 1.25em;
+  min-height: 1.5rem;
+  transition: background-color .2s linear;
+  font-weight: bold;
+  vertical-align: baseline;
+  font-family: nexa, sans-serif;
+  font-size: 1em;
+  max-width: 8em;
+  color: var(--white);
+  background-color: var(--pink);
+  box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+}
+
+button[type=submit]:hover{
+    background-color: #ff658e;
+  }
+    
